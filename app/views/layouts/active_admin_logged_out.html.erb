@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Customer Relation Manager" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'active_admin', media: 'all' %>
+    <%= javascript_include_tag 'active_admin' %>
+  </head>
+  <body class="active_admin logged_out">
+    <div id="wrapper">
+      <div id="content_wrapper">
+        <div id="active_admin_content">
+          <%= yield %>
+        </div>
+      </div>
+      <div id="footer">
+        <p>Customer Relation Manager &copy; <%= Time.current.year %></p>
+      </div>
+    </div>
+  </body>
+</html> 

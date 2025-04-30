@@ -1,0 +1,35 @@
+<div class="customer-card">
+  <div class="customer-image">
+    <% if customer.image.attached? %>
+      <%= image_tag customer.image, class: "customer-avatar" %>
+    <% else %>
+      <div class="customer-avatar-placeholder">
+        <span class="avatar-text">No Image</span>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="customer-info">
+    <h3 class="customer-name"><%= customer.full_name %></h3>
+    
+    <div class="customer-contact">
+      <p class="customer-phone">
+        <i class="fas fa-phone"></i>
+        <%= customer.phone_number %>
+      </p>
+      
+      <% if customer.email.present? %>
+        <p class="customer-email">
+          <i class="fas fa-envelope"></i>
+          <%= customer.email %>
+        </p>
+      <% end %>
+    </div>
+    
+    <% if customer.notes.present? %>
+      <div class="customer-notes">
+        <p><%= customer.notes %></p>
+      </div>
+    <% end %>
+  </div>
+</div> 

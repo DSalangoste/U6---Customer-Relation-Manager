@@ -1,0 +1,10 @@
+//= link_tree ../images
+//= link_directory ../stylesheets .css
+//= link_directory ../stylesheets .scss
+//= link_directory ../javascripts .js
+//= link application.js
+//= link active_admin.scss
+//= link active_admin.js
+//= link application.css
+//= link controllers/application.js
+//= link active_admin.css 

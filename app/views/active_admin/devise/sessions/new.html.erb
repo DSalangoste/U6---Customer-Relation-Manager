@@ -1,0 +1,16 @@
+<% content_for :title do %>
+  Customer Relation Manager
+<% end %>
+
+<%= active_admin_form_for(resource, as: resource_name, url: session_path(resource_name), html: { id: "session_new" }) do |f|
+  f.inputs do
+    f.input :email, label: "Email"
+    f.input :password, label: "Password"
+    f.input :remember_me, label: "Remember me", as: :boolean if devise_mapping.rememberable?
+  end
+  f.actions do
+    f.action :submit, label: "Login", button_html: { value: "Login" }
+  end
+end %>
+
+<%= render "active_admin/devise/shared/links" %> 
