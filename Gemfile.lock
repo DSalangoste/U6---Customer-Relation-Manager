@@ -95,7 +95,7 @@ GEM
     benchmark (0.4.0)
     bigdecimal (3.1.9)
     bindex (0.8.1)
-    bootsnap (1.18.4)
+    bootsnap (1.18.5)
       msgpack (~> 1.2)
     brakeman (7.0.2)
       racc
@@ -400,7 +400,6 @@ GEM
     useragent (0.16.11)
     warden (1.2.9)
       rack (>= 2.0.9)
-    wdm (0.2.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -444,7 +443,6 @@ DEPENDENCIES
   thruster
   turbo-rails
   tzinfo-data
-  wdm (>= 0.1.0)
   web-console
 
 BUNDLED WITH
